@@ -25,7 +25,7 @@
                     <%= question.id%>
                 </td>
                 <td>
-                    <%= question.description.truncate(150)%>
+                    <%=  sanitize question.description.truncate(150)%>
                 </td>
                 <td>
                     <%= question.subject.description%>

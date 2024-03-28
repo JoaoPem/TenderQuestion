@@ -97,6 +97,27 @@ namespace :dev do
     end
   end
 
+  desc "Adiciona todas as respostas no Redis"
+  task add_answers_to_redis: :environment do
+    show_spinner("Adicionando todas as respostas no Redis...") do
+      Answer.find_each do |answer|
+        Rails.cache.write(answer.id, "#{answer.question_id}@@#{answer.correct}" )
+      end
+    end
+  end
+
+  # lib/tasks/remove_answers_from_redis.rake
+
+  desc "Remove todas as respostas do Redis"
+  task remove_answers_from_redis: :environment do
+    show_spinner("Removendo todas as respostas do Redis...") do
+      Answer.find_each do |answer|
+        Rails.cache.delete(answer.id)
+      end
+    end
+  end
+  
+
   private
 
   def show_spinner(msg_start, msg_end = "Concluído!")
