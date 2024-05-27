@@ -46,7 +46,9 @@ GEM
     awesome_print (1.9.2)
     base64 (0.2.0)
     bcrypt (3.1.20)
+    bcrypt (3.1.20-java)
     bigdecimal (3.1.7)
+    bigdecimal (3.1.7-java)
     bindex (0.8.1)
     bootsnap (1.17.1)
       msgpack (~> 1.2)
@@ -64,6 +66,7 @@ GEM
     connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.4)
+    date (3.3.4-java)
     devise (4.9.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -80,10 +83,14 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     ffi (1.16.3)
+    ffi (1.16.3-java)
+    ffi (1.16.3-x64-mingw32)
+    ffi (1.16.3-x86-mingw32)
     globalid (1.1.0)
       activesupport (>= 5.0)
     hashie (5.0.0)
     hiredis (0.6.3)
+    hiredis (0.6.3-java)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
@@ -123,6 +130,7 @@ GEM
     mini_portile2 (2.8.5)
     minitest (5.21.1)
     msgpack (1.7.2)
+    msgpack (1.7.2-java)
     multi_json (1.15.0)
     net-imap (0.4.9.1)
       date
@@ -134,8 +142,15 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     nio4r (2.7.0)
+    nio4r (2.7.0-java)
     nokogiri (1.15.5)
       mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
+    nokogiri (1.15.5-java)
+      racc (~> 1.4)
+    nokogiri (1.15.5-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.15.5-x86-mingw32)
       racc (~> 1.4)
     opensearch-ruby (3.1.0)
       faraday (>= 1.0, < 3)
@@ -153,7 +168,9 @@ GEM
     prawn-table (0.2.2)
       prawn (>= 1.3.0, < 3.0.0)
     puma (3.12.6)
+    puma (3.12.6-java)
     racc (1.7.3)
+    racc (1.7.3-java)
     rack (2.2.8)
     rack-test (2.1.0)
       rack (>= 1.3)
@@ -240,10 +257,12 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.6.9)
       mini_portile2 (~> 2.8.0)
+    sqlite3 (1.6.9-x64-mingw32)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     thor (1.3.0)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.3.0)
     timeout (0.4.1)
     trix (0.10.1)
@@ -255,6 +274,8 @@ GEM
       tty-cursor (~> 0.7)
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2024.1)
+      tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (2.5.0)
@@ -267,10 +288,16 @@ GEM
       railties (>= 5.0)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
+    websocket-driver (0.7.6-java)
+      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
 
 PLATFORMS
+  java
   ruby
+  x64-mingw32
+  x86-mingw32
+  x86-mswin32
 
 DEPENDENCIES
   awesome_print
